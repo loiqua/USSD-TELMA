@@ -1,72 +1,105 @@
-# Prog-5-USSD
+# 🏦 MVola USSD Simulator
 
-Un simulateur d'application USSD pour les services bancaires mobiles, développé en TypeScript avec des bonnes pratiques de développement.
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)](https://eslint.org/)
+[![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=white)](https://prettier.io/)
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/features/actions)
 
-## Fonctionnalités
+> 💡 Bienvenue dans le projet USSD Simulateur MVola. Ce projet simule l'interface USSD de MVola pour le code `#111*1#`.
 
-- Simulation d'un service USSD Orange
-- Menus interactifs pour différentes fonctionnalités bancaires
-- Navigation intuitive entre les menus
-- Affichage de données
-- Stockage local pour les transactions
+## 🚀 Démarrage Rapide
 
-## Prérequis
+### Prérequis
 
-- Node.js (version 18 ou supérieure)
-- npm ou yarn
+- ⚡ Node.js (version 18 ou supérieure)
+- 📦 npm (gestionnaire de paquets Node.js)
 
-## Installation
+### Installation
 
+1. Clonez le repository :
 ```bash
-# Cloner le repository
-git clone https://github.com/votreusername/prog-5-ussd.git
+git clone [URL_DU_REPO]
 cd prog-5-ussd
+```
 
-# Installer les dépendances
+2. Installez les dépendances :
+```bash
 npm install
 ```
 
-## Développement
-
+3. Lancez le serveur de développement :
 ```bash
-# Démarrer l'application en mode développement
 npm run dev
 ```
 
-## Commandes disponibles
+## ✨ Fonctionnalités
 
-- `npm run dev` : Démarrer l'application en mode développement
-- `npm run build` : Compiler le projet TypeScript
-- `npm run start` : Démarrer l'application compilée
-- `npm run lint` : Exécuter le linter ESLint
-- `npm run lint:fix` : Corriger automatiquement les problèmes de lint
-- `npm run format` : Formater le code avec Prettier
-- `npm test` : Exécuter les tests
+- 📱 Simulation de l'interface USSD MVola
+- 🔄 Menu interactif avec navigation
+- 💰 Gestion des transactions
+- ✅ Validation des entrées utilisateur
 
-## Structure du projet
+## 📁 Structure du Projet
 
 ```
 prog-5-ussd/
-├── .github/           # Configuration GitHub Actions
-├── dist/              # Code compilé (généré par TypeScript)
-├── docs/              # Documentation
-├── src/               # Code source
-│   ├── cli.ts         # Interface en ligne de commande
-│   ├── index.ts       # Point d'entrée de l'application
-│   ├── menus.ts       # Définitions des menus USSD
-│   ├── types.ts       # Types et interfaces
-│   ├── ussdService.ts # Service USSD
-│   └── utils.ts       # Fonctions utilitaires
+├── src/
+│   ├── types/          # Types TypeScript
+│   │   └── ussd.ts
+│   ├── utils/          # Utilitaires
+│   │   └── validation.ts
+│   ├── config/         # Configuration
+│   │   └── constants.ts
+│   ├── services/       # Services
+│   │   └── ussdService.ts
+│   └── index.ts        # Point d'entrée
 ├── .eslintrc.json     # Configuration ESLint
 ├── .prettierrc        # Configuration Prettier
-├── package.json       # Dépendances et scripts
-└── tsconfig.json      # Configuration TypeScript
+├── tsconfig.json      # Configuration TypeScript
+└── package.json       # Dépendances et scripts
 ```
 
-## Conventions de code
+## 🛠️ Bonnes Pratiques de Développement
 
-Le projet suit des conventions de nommage et de style strictes. Consultez le fichier `docs/CONVENTIONS.md` pour plus d'informations.
+### 📝 Convention de Nommage
+- `camelCase` pour les variables et fonctions
+- `PascalCase` pour les classes et interfaces
+- `kebab-case` pour les noms de fichiers
 
-## Licence
+### 🔍 Linting et Formatting
+- ESLint pour la détection des erreurs de code
+- Prettier pour le formatage automatique du code
+- Configuration stricte TypeScript
 
-ISC 
+### 🔄 Intégration Continue
+Le projet utilise GitHub Actions pour :
+- ✅ Vérification automatique du code à chaque push
+- 🔍 Exécution des tests de linting
+- 🎯 Validation de la qualité du code
+
+## 📜 Scripts Disponibles
+
+| Commande | Description |
+|----------|-------------|
+| `npm run dev` | 🚀 Lance le serveur de développement |
+| `npm run build` | 📦 Compile le projet |
+| `npm run lint` | 🔍 Exécute le linter |
+| `npm run format` | ✨ Formate le code avec Prettier |
+
+## 🤝 Contribution
+
+1. 🍴 Créez une branche pour votre fonctionnalité
+2. 💾 Committez vos changements
+3. 📤 Poussez vers la branche
+4. 🔄 Créez une Pull Request
+
+## 📄 Licence
+
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+---
+
+<div align="center">
+  <sub>Construit avec ❤️ par l'équipe MVola USSD</sub>
+</div>
