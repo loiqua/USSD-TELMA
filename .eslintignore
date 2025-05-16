@@ -1,0 +1,4 @@
+node_modules/
+dist/
+USSD-main/
+simulator.ts 
